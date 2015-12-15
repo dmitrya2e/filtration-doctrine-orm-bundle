@@ -1,0 +1,32 @@
+parameters:
+    da2e.filtration_doctrine_orm.filter.text_filter_class: Da2e\FiltrationDoctrineORMBundle\Filter\TextFilter
+    da2e.filtration_doctrine_orm.filter.number_filter_class: Da2e\FiltrationDoctrineORMBundle\Filter\NumberFilter
+    da2e.filtration_doctrine_orm.filter.date_filter_class: Da2e\FiltrationDoctrineORMBundle\Filter\DateFilter
+    da2e.filtration_doctrine_orm.filter.choice_filter_class: Da2e\FiltrationDoctrineORMBundle\Filter\ChoiceFilter
+    da2e.filtration_doctrine_orm.filter.entity_filter_class: Da2e\FiltrationDoctrineORMBundle\Filter\EntityFilter
+
+services:
+    da2e.filtration_doctrine_orm.filter.text_filter:
+        class: %da2e.filtration_doctrine_orm.filter.text_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_doctrine_orm_text_filter }
+
+    da2e.filtration_doctrine_orm.filter.number_filter:
+        class: %da2e.filtrfiltration_doctrine_ormation.filter.number_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_doctrine_orm_number_filter }
+
+    da2e.filtration_doctrine_orm.filter.date_filter:
+        class: %da2e.filtration_doctrine_orm.filter.date_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_doctrine_orm_date_filter }
+
+    da2e.filtration_doctrine_orm.filter.choice_filter:
+        class: %da2e.filtration_doctrine_orm.filter.choice_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_doctrine_orm_choice_filter }
+
+    da2e.filtration_doctrine_orm.filter.entity_filter:
+        class: %da2e.filtration_doctrine_orm.filter.entity_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_doctrine_orm_entity_filter }

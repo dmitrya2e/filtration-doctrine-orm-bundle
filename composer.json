@@ -1,0 +1,28 @@
+{
+  "name": "dmitrya2e/filtration-doctrine-orm-bundle",
+  "type": "filtration-doctrine-orm-bundle",
+  "description": "FiltrationDoctrineORMBundle ...",
+  "keywords": [
+    "filtration",
+    "doctrine",
+    "orm",
+    "bundle",
+    "symfony"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitry Abrosimov",
+      "email": "abrosimovs@gmail.com"
+    }
+  ],
+  "require": {
+    "dmitrya2e/filtration-bundle": "v2.0.0-alpha",
+    "symfony/dependency-injection": "2.7.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Da2e\\FiltrationDoctrineORMBundle\\": ""
+    }
+  }
+}
