@@ -8,6 +8,7 @@ Current status: **WORK IN PROGRESS**.
 
 - PHP 5.4++
 - Symfony 2.3++ (the bundle is tested with Symfony **2.3** and **2.7** versions)
+- [Da2e FiltrationBundle](https://github.com/dmitrya2e/filtration-bundle)
 
 ## How to install
 
